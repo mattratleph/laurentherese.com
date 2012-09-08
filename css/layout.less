@@ -1,7 +1,66 @@
 // layout.less
+body {
+  background: hsl(0,0%,90%);
+  color: hsl(0,0%,20%);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+h1,h2,h3,h4,h5,p {
+  margin: 16px 0;
+}
+h1 {
+  font-size: x-large;
+}
+a {
+  color: hsl(0,0%,0%);
+  text-decoration: none;
+}
+small {
+  font-size: small;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
 header {
-  background: gray;
+  height: 100px;
+  line-height: 84px;
+  margin: 0 auto;
+  width: 750px;
+  nav {
+    float: right;
+    font-size: small;
+    li {
+      display: inline;
+      list-style-type: none;
+      &:nth-child(1n+2) {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+.content {
+  margin: 0 auto;
+  width: 750px;
+  .row {
+    clear: left;
+    img {
+      float: left;
+      &:first-child {
+        margin: 10px 0;
+      }
+      &:nth-child(1n+2) {
+        margin: 10px 0 10px 20px;
+      }
+    }
+  }
+}
+footer {
+  clear: left;
   height: 50px;
-  margin-top: 20px;
-  width: 600px;
+  line-height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  width: 750px;
 }

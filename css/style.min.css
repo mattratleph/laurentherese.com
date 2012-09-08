@@ -5,4 +5,14 @@ ol,ul{list-style:none;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
-header{background:gray;height:50px;margin-top:20px;width:600px;}
+body{background:#e6e6e6;color:#333333;font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;}
+h1,h2,h3,h4,h5,p{margin:16px 0;}
+h1{font-size:x-large;}
+a{color:#000000;text-decoration:none;}
+small{font-size:small;}
+strong{font-weight:bold;}
+em{font-style:italic;}
+header{height:100px;line-height:84px;margin:0 auto;width:750px;}header nav{float:right;font-size:small;}header nav li{display:inline;list-style-type:none;}header nav li:nth-child(1n+2){margin-left:10px;}
+.content{margin:0 auto;width:750px;}.content .row{clear:left;}.content .row img{float:left;}.content .row img:first-child{margin:10px 0;}
+.content .row img:nth-child(1n+2){margin:10px 0 10px 20px;}
+footer{clear:left;height:50px;line-height:50px;margin:0 auto;text-align:center;width:750px;}
