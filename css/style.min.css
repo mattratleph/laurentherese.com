@@ -13,6 +13,7 @@ small{font-size:small;}
 strong{font-weight:bold;}
 em{font-style:italic;}
 header{height:100px;line-height:84px;margin:0 auto;width:750px;}header nav{float:right;font-size:small;}header nav li{display:inline;list-style-type:none;}header nav li:nth-child(1n+2){margin-left:10px;}
-.content{margin:0 auto;width:750px;}.content .row{clear:left;}.content .row img{float:left;}.content .row img:first-child{margin:10px 0;}
+.content{margin:0 auto;width:750px;}.content table{margin:0 auto;width:300px;}.content table td{padding:5px;}
+.content .row{clear:left;}.content .row img{float:left;}.content .row img:first-child{margin:10px 0;}
 .content .row img:nth-child(1n+2){margin:10px 0 10px 20px;}
 footer{clear:left;height:50px;line-height:50px;margin:0 auto;text-align:center;width:750px;}
