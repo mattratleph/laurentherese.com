@@ -2,20 +2,21 @@
 body {
   background: hsl(0,0%,90%);
   color: hsl(0,0%,20%);
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
 }
 h1,h2,h3,h4,h5,p {
   margin: 16px 0;
 }
 h1 {
-  font-size: x-large;
+  font-size: large;
 }
 a {
   color: hsl(0,0%,0%);
   text-decoration: none;
 }
 small {
-  font-size: small;
+  font-size: x-small;
 }
 strong {
   font-weight: bold;
@@ -30,7 +31,7 @@ header {
   width: 750px;
   nav {
     float: right;
-    font-size: small;
+    font-size: x-small;
     li {
       display: inline;
       list-style-type: none;
@@ -50,9 +51,140 @@ header {
       padding: 5px;
     }
   }
+  .carousel {
+    overflow: hidden;
+    width: 100%;
+    img {
+      display: block;
+      max-width: 100%;
+      width: 100%;
+    }
+    h2 {
+      background-color: rgba(0,0,0,0.75);
+      bottom: 10px;
+      color: #fff;
+      font-size: 1em;
+      left: 10px;
+      padding: 0.5em;
+      position: absolute;
+      right: 10px;
+      text-align: right;
+    }
+    .panes {
+      list-style: none;
+      position: relative;
+      overflow: hidden;
+      width: 500%;
+      -webkit-animation: carousel 30s infinite;
+      -moz-animation: carousel 30s infinite;
+      -ms-animation: carousel 30s infinite;
+      -o-animation: carousel 30s infinite;
+      animation: carousel 30s infinite;
+      & > li {
+        float: left;
+        position: relative;
+        width: 20%;
+      }
+    }
+  }
+  @-webkit-keyframes carousel {
+    0%    { left: 0; }
+    11%   { left: 0; }
+    12.5% { left: -100%; }
+    23.5% { left: -100%; }
+    25%   { left: -200%; }
+    36%   { left: -200%; }
+    37.5% { left: -300%; }
+    48.5% { left: -300%; }
+    50%   { left: -400%; }
+    61%   { left: -400%; }
+    62.5% { left: -300%; }
+    73.5% { left: -300%; }
+    75%   { left: -200%; }
+    86%   { left: -200%; }
+    87.5% { left: -100%; }
+    98.5% { left: -100%; }
+    100%  { left: 0; }
+  }
+  @-moz-keyframes carousel {
+    0%    { left: 0; }
+    11%   { left: 0; }
+    12.5% { left: -100%; }
+    23.5% { left: -100%; }
+    25%   { left: -200%; }
+    36%   { left: -200%; }
+    37.5% { left: -300%; }
+    48.5% { left: -300%; }
+    50%   { left: -400%; }
+    61%   { left: -400%; }
+    62.5% { left: -300%; }
+    73.5% { left: -300%; }
+    75%   { left: -200%; }
+    86%   { left: -200%; }
+    87.5% { left: -100%; }
+    98.5% { left: -100%; }
+    100%  { left: 0; }
+  }
+  @-ms-keyframes carousel {
+    0%    { left: 0; }
+    11%   { left: 0; }
+    12.5% { left: -100%; }
+    23.5% { left: -100%; }
+    25%   { left: -200%; }
+    36%   { left: -200%; }
+    37.5% { left: -300%; }
+    48.5% { left: -300%; }
+    50%   { left: -400%; }
+    61%   { left: -400%; }
+    62.5% { left: -300%; }
+    73.5% { left: -300%; }
+    75%   { left: -200%; }
+    86%   { left: -200%; }
+    87.5% { left: -100%; }
+    98.5% { left: -100%; }
+    100%  { left: 0; }
+  }
+  @-o-keyframes carousel {
+    0%    { left: 0; }
+    11%   { left: 0; }
+    12.5% { left: -100%; }
+    23.5% { left: -100%; }
+    25%   { left: -200%; }
+    36%   { left: -200%; }
+    37.5% { left: -300%; }
+    48.5% { left: -300%; }
+    50%   { left: -400%; }
+    61%   { left: -400%; }
+    62.5% { left: -300%; }
+    73.5% { left: -300%; }
+    75%   { left: -200%; }
+    86%   { left: -200%; }
+    87.5% { left: -100%; }
+    98.5% { left: -100%; }
+    100%  { left: 0; }
+  }
+  @keyframes carousel {
+    0%    { left: 0; }
+    11%   { left: 0; }
+    12.5% { left: -100%; }
+    23.5% { left: -100%; }
+    25%   { left: -200%; }
+    36%   { left: -200%; }
+    37.5% { left: -300%; }
+    48.5% { left: -300%; }
+    50%   { left: -400%; }
+    61%   { left: -400%; }
+    62.5% { left: -300%; }
+    73.5% { left: -300%; }
+    75%   { left: -200%; }
+    86%   { left: -200%; }
+    87.5% { left: -100%; }
+    98.5% { left: -100%; }
+    100%  { left: 0; }
+  }
   .row {
     clear: left;
-    img {
+    a {
       float: left;
       &:first-child {
         margin: 10px 0;
