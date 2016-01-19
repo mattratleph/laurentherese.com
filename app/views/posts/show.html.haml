@@ -1,17 +1,10 @@
 %p#notice= notice
 
-%p
-  = image_tag @post.image.url(:medium)
-%p
-  %b Title:
-  = @post.title
-%p
-  %b Link:
-  = @post.link
-%p
-  %b Description:
-  = @post.description
+%section.center
+  %p= image_tag @post.image.url(:medium)
+  %p= @post.title
+  %p= @post.link
+  %p= @post.description
 
-= link_to 'Edit', edit_post_path(@post)
-\|
-= link_to 'Back', posts_path
+  - if user_signed_in?
+    = link_to 'Edit', edit_post_path(@post)

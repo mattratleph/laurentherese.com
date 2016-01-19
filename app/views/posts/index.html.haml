@@ -5,10 +5,12 @@
       %p= post.title
       %p= post.link
       %p= post.description
-      %p
-        = link_to 'Edit', edit_post_path(post)
-        |
-        = link_to 'Delete', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      - if user_signed_in?
+        %p
+          = link_to 'Edit', edit_post_path(post)
+          |
+          = link_to 'Delete', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
-%section.clear
-  = link_to 'New Post', new_post_path
+- if user_signed_in?
+  %section.clear
+    = link_to 'New Post', new_post_path

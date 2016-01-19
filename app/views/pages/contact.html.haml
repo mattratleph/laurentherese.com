@@ -1,0 +1,16 @@
+%p
+  Thank you for your inquiry. Please fill out the information below. I look forward to hearing from you!
+
+= form_tag('mailto:laurentheresephoto@gmail.com?subject=Contact', method: 'post') do
+  %table
+    %tr
+      %td= label_tag(:name, 'Name:')
+      %td= text_field_tag(:name)
+    %tr
+      %td= label_tag(:email, 'Email Address:')
+      %td= text_field_tag(:email)
+    %tr
+      %td= label_tag(:comment, 'Comment:')
+      %td= text_area_tag(:comment)
+    %tr
+      %td= submit_tag('Submit')
